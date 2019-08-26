@@ -1,14 +1,16 @@
 import React from "react";
+import "../Stile.css"
 
 const Home = props => {
   return (
     <React.Fragment>
-      <h1>My site</h1>
+      
       <div>
-        <p>This is Ball          Story           site application</p>
+        <h1>Ball story</h1>
+        <p>Ball journey</p>
         <button onClick={() => {
             props.switchPage("About");
-        }} >About page</button>
+        }} >Start</button>
       </div>
     </React.Fragment>
   );

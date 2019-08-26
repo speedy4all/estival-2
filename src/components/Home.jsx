@@ -5,7 +5,7 @@ const Home = props => {
     <React.Fragment>
       <h1>My site</h1>
       <div>
-        <p>This is my first site application</p>
+        <p>This is E-war application</p>
         <button onClick={() => {
             props.switchPage("About");
         }} >About page</button>

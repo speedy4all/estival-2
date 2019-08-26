@@ -6,7 +6,7 @@ const Home = props => {
       <h1>My site</h1>
       <div>
         <p>This is TRIP_ME application</p>
-        <button onClick={() => {
+        <button onClick={()  => {
             props.switchPage("About");
         }} >About page</button>
       </div>

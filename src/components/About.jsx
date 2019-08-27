@@ -3,13 +3,10 @@ import React from "react";
 const About = props => {
   return (
     <React.Fragment>
-      <h4>This is the about page</h4>
+      <h1>Nothing for now</h1>
       <div>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Et obcaecati
-          unde perspiciatis doloremque, in eaque harum eligendi nemo nihil?
-          Rerum ipsum explicabo iusto corporis iure facilis est quibusdam atque
-          quasi!
+          You just can go back to home page 
         </p>
         <button onClick={props.switchPage}>Back home</button>
       </div>

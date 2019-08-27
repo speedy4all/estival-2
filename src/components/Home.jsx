@@ -15,7 +15,7 @@ const Home = props => {
           <Col sm={1}>tripME</Col>
           <Col sm={11}><InputGroup >
             <InputGroupAddon addonType="prepend">search</InputGroupAddon>
-            <Input placeholder="destinatio" />
+            <Input placeholder="destination" />
             <Button color="info" onClick={() => {
               props.switchPage("About");
             }} >enter</Button>{' '}

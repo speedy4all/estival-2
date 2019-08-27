@@ -25,7 +25,23 @@ const Home = props => {
         </Row>
         <Row>
           <Col sm={4}>Filters</Col>
-          <Col sm={8}>Restul paginii</Col>
+          <Col sm={8}></Col>
+        </Row>
+        <Row>
+          <Col sm={2}>
+            <Form>
+              <FormGroup>
+                <Label for="exampleSelect">Stele</Label>
+                <Input type="select" name="select" id="exampleSelect">
+                  <option>*</option>
+                  <option>**</option>
+                  <option>***</option>
+                  <option>****</option>
+                  <option>*****</option>
+                </Input>
+              </FormGroup>
+            </Form>
+          </Col>
         </Row>
       </Container>
     </React.Fragment>

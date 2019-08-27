@@ -3,7 +3,7 @@ import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap'
 const Home = props => {
   return (
     <React.Fragment>
-      <h1>tripME</h1>
+      
       <div>
         <InputGroup >
           <InputGroupAddon addonType="prepend">search</InputGroupAddon>

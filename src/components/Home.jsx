@@ -4,6 +4,7 @@ import { Button } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import './style.css';
 import { Form, FormGroup, Label, FormText } from 'reactstrap';
 
 const Home = props => {

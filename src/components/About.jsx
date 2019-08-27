@@ -3,6 +3,7 @@ import { Button } from "reactstrap"
 const About = props => {
   return (
     <React.Fragment>
+      
       <h1>Nothing for now</h1>
       <div>
         <p>
@@ -10,6 +11,7 @@ const About = props => {
         </p>
         <button onClick={props.switchPage}><Button color="danger">danger</Button>{' '}</button>
       </div>
+      
     </React.Fragment>
   );
 };

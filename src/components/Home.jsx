@@ -25,7 +25,7 @@ const Home = props => {
         </Row>
         <Row>
           <Col sm={4}>Filters</Col>
-          <Col sm={8}></Col>
+
         </Row>
         <Row>
           <Col sm={2}>
@@ -42,6 +42,7 @@ const Home = props => {
               </FormGroup>
             </Form>
           </Col>
+          <Col sm={10} className="ab"></Col>
         </Row>
       </Container>
     </React.Fragment>

@@ -9,6 +9,7 @@ import { Form, FormGroup, Label, FormText } from 'reactstrap';
 const Home = props => {
   return (
     <React.Fragment>
+
       <Container>
         <Row>
           <Col sm={1}>tripME</Col>

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Stile.css"
+import "../HomeStyle.css";
 import { Button } from 'reactstrap';
 
 const Home = props => {

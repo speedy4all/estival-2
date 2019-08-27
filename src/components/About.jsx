@@ -1,4 +1,6 @@
 import React from "react";
+import "../Screen1Style.css";
+
 
 const About = props => {
   return (

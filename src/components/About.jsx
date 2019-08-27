@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button } from "reactstrap"
 const About = props => {
   return (
     <React.Fragment>
@@ -8,7 +8,7 @@ const About = props => {
         <p>
           You just can go back to home page 
         </p>
-        <button onClick={props.switchPage}>Back home</button>
+        <button onClick={props.switchPage}><Button color="danger">danger</Button>{' '}</button>
       </div>
     </React.Fragment>
   );

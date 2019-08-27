@@ -8,8 +8,7 @@ const About = props => {
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Et obcaecati
           unde perspiciatis doloremque, in eaque harum eligendi nemo nihil?
-          Rerum ipsum explicabo iusto corporis iure facilis est quibusdam atque
-          quasi!
+          
         </p>
         <button onClick={props.switchPage}>Back home</button>
       </div>

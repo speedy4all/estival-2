@@ -8,6 +8,7 @@ const Home = props => {
         <InputGroup >
           <InputGroupAddon addonType="prepend">search</InputGroupAddon>
           <Input placeholder="username" />
+          <InputGroupAddon addonType="prepend">enter</InputGroupAddon>
         </InputGroup>
         <p>This is TRIP_ME application</p>
 

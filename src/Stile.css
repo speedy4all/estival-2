@@ -1,4 +1,7 @@
-div{
+
+.div1{
+    background-image: url("C:\Ballz Story\React\estival-2\src\assets\img\skogafoss-famous-waterfall-iceland-1.jpg");
+    background-size: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;

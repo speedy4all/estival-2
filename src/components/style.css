@@ -1,0 +1,11 @@
+.titlu1 {
+    text-align: center;
+}
+
+body {
+    height: 100vh;
+    background-image: url('../imagini/poza4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

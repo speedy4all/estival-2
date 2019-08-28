@@ -8,8 +8,6 @@ const Home = props => {
       
       
 
-
-
       <div class="div1">
 
         <h1 class="titlu">Ball story</h1>
@@ -26,16 +24,6 @@ const Home = props => {
         }} ><Button color="success">Start Game</Button>{' '}</button>
        
         </div>
-        <button
-          class="buttonStart"
-          onClick={() => {
-            props.switchPage("About");
-          }}
-        >
-          <Button color="success">Start Game</Button>{" "}
-        </button>
-
-      </div>
       </React.Fragment>
   );
 };

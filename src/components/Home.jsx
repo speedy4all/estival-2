@@ -26,7 +26,6 @@ const Home = props => {
           }} >Help!
             </Button>{' '}
 
-<<<<<<< HEAD
         </Row>
         <Row>
           <br />
@@ -41,10 +40,6 @@ const Home = props => {
         </Row>
         <Row >
           <Col sm={2} className="fil">Filters</Col>
-=======
-        </Navbar>
-
->>>>>>> b27fb13048dfcd1e22b780d8e0e7e24409a0e72e
 
         <Col sm={2} className="fil">
           <Row>

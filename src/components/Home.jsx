@@ -30,6 +30,9 @@ const Home = props => {
           </Col>
 
         </Row>
+        <Row>
+          <br />
+        </Row>
 
         <Row >
           <Col sm={2} className="fil">Filters</Col>

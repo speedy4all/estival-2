@@ -1,26 +1,28 @@
 import React, { Component } from "react";
 import Home from "../components/Home";
 import About from "../components/About";
-import { Button } from 'reactstrap';
-
+import { Button } from "reactstrap";
 
 class App extends Component {
   constructor(props) {
     super(props);
-    
 
     this.switchPage = this.switchPage.bind(this);
     this.state = {
-      showAbout: false,
+      showAbout: false
     };
   }
 
   switchPage(page) {
-    this.setState({showAbout: page === 'About' ? true : false});
+    this.setState({ showAbout: page === "About" ? true : false });
   }
 
   render() {
-    return this.state.showAbout ? <About switchPage={this.switchPage} /> : <Home switchPage={this.switchPage} />;
+    return this.state.showAbout ? (
+      <About switchPage={this.switchPage} />
+    ) : (
+      <Home switchPage={this.switchPage} />
+    );
   }
 }
 

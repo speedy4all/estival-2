@@ -1,6 +1,7 @@
 import React from 'react';
+import { Input, Form, FormGroup, Label, Button } from 'reactstrap';
 
-export class Filter extends Component {
+export class Filter extends React.Component {
     
 
 

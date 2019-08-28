@@ -1,23 +1,39 @@
 import React, { Component } from 'react';
 import{Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
 
-export class LogInForm extends React.Component{
-render(){
-    return(
-        <div>
-        <form>
-        <FormGroup>
-        <Label for="exampleEmail">Email</Label>
-        <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
-      </FormGroup>
-      <FormGroup>
-        <Label for="examplePassword">Password</Label>
-        <Input type="password" name="password" id="examplePassword" placeholder="password placeholder" />
-      </FormGroup>
-        </form>
-        </div>
-    )
-}
+
+class LogInForm extends Component{
+    constructor(props) {
+        super(props)
+        this.changeValue = this.changeValue.bind(this)
+
+        this.state = {
+            Email: "",
+            Password: "" 
+        }
+    }
+    
+    changeValue(e){
+        this.setState({
+            [e.target.email]: e.target.value
+        })
+    }
+    render() {
+        return (
+            <div>
+                <form onSubmit={(e)=>{this.props.saveNewEvent(this.state)}}>
+                    <label htmlFor="">Email:</label>
+                    <input type="text" name="email" onChange={this.changeValue}/>
+                    
+                    <label htmlFor="">Password:</label>
+                    <input type="text" name="password" onChange={this.changeValue}/>
+                    
+                    <button type="login">LogIn</button>
+            
+                </form>
+            </div>
+        )
+    }
 }
 
 export default LogInForm

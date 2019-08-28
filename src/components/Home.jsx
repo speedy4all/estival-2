@@ -1,5 +1,6 @@
 import React from 'react'
 import NavBar from "./NavBar"
+import LogInForm from "./LogInForm"
 import NewEventFrom from "./NewEventForm"
 
 class Home extends React.Component {
@@ -8,16 +9,21 @@ class Home extends React.Component {
         super(props)
 
         this.addNewEvent = this.addNewEvent.bind(this)
+        this.showLogInForm = this.showLogInForm.bind(this)
         this.saveNewEvent = this.saveNewEvent.bind(this)
 
         this.state = {
             showNewEventForm: false,
-            eventsList: JSON.parse(localStorage.getItem("eventsList")) || []
+            eventsList: JSON.parse(localStorage.getItem("eventsList")) || [],
+            showLogInForm: false,
         }
     }
 
     addNewEvent() {
         this.setState({ showNewEventForm: true })
+    }
+    showLogInForm() {
+        this.setState({ showLogInForm: true })
     }
     saveNewEvent(newEvent) {
         let list = JSON.parse(localStorage.getItem("eventsList"))
@@ -33,13 +39,14 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <NavBar addNewEvent={this.addNewEvent} />
+                <NavBar addNewEvent={this.addNewEvent} showLogInForm={this.showLogInForm} />
+                {this.state.showLogInForm ? <LogInForm/> : null}
                 {this.state.showNewEventForm ? (
                     <div style={{ marginTop: '200px' }}>
                         <NewEventFrom saveNewEvent={this.saveNewEvent} />
 
                     </div>
-                ) : this.state.eventsList.map(
+                ) : !this.state.showLogInForm && this.state.eventsList.map(
                     event => <div>
                                 
                                 <div>{event.name}</div>

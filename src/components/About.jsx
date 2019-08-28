@@ -3,8 +3,6 @@ import { Button, Row, Alert } from "reactstrap";
 import "../Stile.css";
 import Typist from "react-typist";
 
-
-
 const About = props => {
   return (
     <React.Fragment>
@@ -23,6 +21,10 @@ const About = props => {
             class="imagine"
             src="https://www.shitpostbot.com/resize/585/400?img=%2Fimg%2Fsourceimages%2Fcalypso-twisted-metal-5a86b4cd8e306.jpeg"
           ></img>
+
+
+
+
           <Row>
             <Button
               color="primary"
@@ -40,6 +42,7 @@ const About = props => {
             </Button>
           </Row>
         </div>
+
         <div className="d-flex align-items-end justify-content-center">
         <Alert color="primary">
               <Typist>
@@ -47,15 +50,19 @@ const About = props => {
             </Typist>
             </Alert>
         </div>
+
       </div>
+      <div class="text" className="d-flex align-items-end justify-content-center">
+        <Alert color="primary">
+          <Typist>
+            Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
+          </Typist>
+        </Alert>
 
-
-
+      </div>
     </React.Fragment>
   );
 };
-
-
 
 
 

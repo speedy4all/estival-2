@@ -31,13 +31,13 @@ const FirstPage = props => (
                         block
                         onClick={() => props.switchToPage("aleg1")}
                     >
-                        Alegerea 1
+                        I should go with Man in Black
       </Button>
                 </Row>
 
                 <Row>
                     <Button color="primary" size="lg" block onClick={() => props.switchToPage('aleg2')}>
-                        Alegerea 2
+                        I should go alone
       </Button>
                 </Row>
             </div>
@@ -46,7 +46,7 @@ const FirstPage = props => (
         <div className="d-flex align-items-end justify-content-center">
             <Alert color="primary">
                 <Typist>
-                    Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
+                (Man in Black) : I can help you go home
     </Typist>
             </Alert>
 

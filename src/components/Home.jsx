@@ -10,16 +10,22 @@ import { Form, FormGroup, Label, FormText } from 'reactstrap';
 const Home = props => {
   return (
     <React.Fragment>
+      <div className="Homecss">
       <Container>
         <Row>
           <Col sm={1}>tripME</Col>
-          <Col sm={11}><InputGroup >
+          <Col sm={10}><InputGroup >
             <InputGroupAddon addonType="prepend">search</InputGroupAddon>
             <Input placeholder="destination" />
             <Button color="info" onClick={() => {
               props.switchPage("About");
             }} >enter</Button>{' '}
           </InputGroup>
+          </Col>
+          <Col sm={1}> 
+          <Button className="button1" onClick={() => {
+              props.switchPage("About");
+            }} >Help!</Button>{' '}
           </Col>
 
         </Row>
@@ -44,6 +50,7 @@ const Home = props => {
           </Col>
         </Row>
       </Container>
+      </div>
     </React.Fragment>
   );
 };

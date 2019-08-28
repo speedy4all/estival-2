@@ -2,10 +2,27 @@
     text-align: center;
 }
 
-body {
+.Homecss{
     height: 100vh;
     background-image: url('../imagini/poza4.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+.Aboutcss{
+    height: 100vh;
+    background-image: url('../imagini/intrebare.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button1 {
+    background-color: #00008B;
+    
+}
+
+.button1:hover {
+    background-color: red;
 }

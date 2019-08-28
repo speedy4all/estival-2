@@ -3,6 +3,7 @@ import React from "react";
 const About = props => {
   return (
     <React.Fragment>
+      <div className="Aboutcss">
       <h4>This is the about page</h4>
       <div>
         <p>
@@ -12,6 +13,7 @@ const About = props => {
           
         </p>
         <button onClick={props.switchPage}>Back home</button>
+      </div>
       </div>
     </React.Fragment>
   );

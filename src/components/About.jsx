@@ -29,7 +29,7 @@ class About extends React.Component {
           break;
 
       default:
-        this.setState({ currentPage: <Aleg1 switchToPage={this.switchToPage} /> });
+        this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
         break;
     }
   }

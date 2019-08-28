@@ -1,6 +1,6 @@
 import React from "react";
 import "../Stile.css";
-import { Button } from "reactstrap";
+import { Button } from 'reactstrap';
 
 const Home = props => {
   return (
@@ -20,4 +20,4 @@ const Home = props => {
   );
 };
 
-export default Home;
+  export default Home;

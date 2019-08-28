@@ -27,11 +27,15 @@ const Home = props => {
             </Button>{' '}
 
         </Navbar>
+
+
+        <Col sm={2} className="fil">
+          <Row>
+            <br />
+          </Row>Filters
         <Row>
-          <br />
-        </Row>
-        <Col sm={2} className="fil">Filters
-        <br />
+            <br />
+          </Row>
           <Form>
             <FormGroup>
               <Label for="exampleSelect">Clasificare dupa stele</Label>

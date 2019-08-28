@@ -8,7 +8,7 @@ class LogInForm extends Component{
         this.changeValue = this.changeValue.bind(this)
 
         this.state = {
-            Email: "",
+            Email: "", 
             Password: "" 
         }
     }

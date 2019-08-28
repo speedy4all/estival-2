@@ -35,7 +35,7 @@ class Home extends React.Component {
             <div>
                 <NavBar addNewEvent={this.addNewEvent} />
                 {this.state.showNewEventForm ? (
-                    <div style={{ marginTop: '200px' }}>
+                    <div>
                         <NewEventFrom saveNewEvent={this.saveNewEvent} />
 
                     </div>

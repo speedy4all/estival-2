@@ -1,0 +1,27 @@
+.form-container{
+    width: 100%;
+    margin-top: 10vh;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#saveBtn{
+    margin-top: 10px;
+}

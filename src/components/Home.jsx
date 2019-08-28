@@ -32,11 +32,8 @@ const Home = props => {
         </Row>
         <Row>
           <Col sm={4}>Filters</Col>
-
+          <Col sm={8} className="carusel"> <Carusel /> </Col>
         </Row>
-        <div className="carusel" >
-            <Carusel />
-        </div>
         <Row>
           <Col sm={2}>
             <Form>

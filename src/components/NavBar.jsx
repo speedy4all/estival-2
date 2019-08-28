@@ -23,14 +23,21 @@ export class NavBar extends Component {
         super(props);
 
         this.toggle = this.toggle.bind(this);
+        this.changeSearchValue = this.changeSearchValue.bind(this);
         this.state = {
-            isOpen: false
+            isOpen: false,
+            searchValue: ""
         };
     }
     toggle() {
         this.setState({
             isOpen: !this.state.isOpen
         });
+    }
+    changeSearchValue(e) {
+      this.setState ({
+        searchValue: e.target.value
+      })
     }
     render() {
         return (
@@ -45,9 +52,9 @@ export class NavBar extends Component {
                   </NavItem>
                   <NavItem>
                   <InputGroup>
-                    <Input placeholder="evenimente" />
+                    <Input placeholder="evenimente" onChange={this.changeSearchValue} />
                         <InputGroupAddon addonType="append">
-                            <Button color="info">Cauta</Button>{' '}
+                            <Button color="info" onClick={()=>{this.props.searchEvent(this.state.searchValue)}}>Cauta</Button>{' '}
                         </InputGroupAddon>
                     </InputGroup>
                   </NavItem>

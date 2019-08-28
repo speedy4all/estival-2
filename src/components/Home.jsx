@@ -11,12 +11,19 @@ class Home extends React.Component {
         this.addNewEvent = this.addNewEvent.bind(this)
         this.showLogInForm = this.showLogInForm.bind(this)
         this.saveNewEvent = this.saveNewEvent.bind(this)
+        this.searchEvent = this.searchEvent.bind(this)
+
 
         this.state = {
             showNewEventForm: false,
             eventsList: JSON.parse(localStorage.getItem("eventsList")) || [],
             showLogInForm: false,
         }
+    }
+    searchEvent(searchValue) {
+        const originalList = JSON.parse(localStorage.getItem("eventsList"))
+        const list=originalList.filter(item => item.name.toLowerCase().indexOf(searchValue.toLowerCase()) !==-1);
+        this.setState({eventsList: [...list]});
     }
 
     addNewEvent() {
@@ -39,7 +46,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                <NavBar addNewEvent={this.addNewEvent} showLogInForm={this.showLogInForm} />
+                <NavBar addNewEvent={this.addNewEvent} showLogInForm={this.showLogInForm} searchEvent={this.searchEvent}/>
                 {this.state.showLogInForm ? <LogInForm/> : null}
                 {this.state.showNewEventForm ? (
                     <div style={{ marginTop: '200px' }}>

@@ -6,16 +6,16 @@ import Col from 'react-bootstrap/Col';
 import './style.css';
 import Carusel from './Carusel';
 import Filter from './Filter';
-
+import Header from './header'
 
 const Home = props => {
   return (
     <React.Fragment>
       <div className="Homecss">
-        
 
+        <Header />
         <Col sm={2} className="fil">Filters
-        <Filter filterData={()=>({})}/>
+        <Filter filterData={() => ({})} />
         </Col>
       </div>
     </React.Fragment>

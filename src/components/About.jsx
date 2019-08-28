@@ -1,50 +1,56 @@
 import React from "react";
+import { Button, Row, Alert } from "reactstrap";
+
 import "../Stile.css";
-import Aleg1 from './Aleg1';
-import Aleg2 from './Aleg2';
-import Aleg3 from './Aleg3';
-import FirstPage from "./FirstPage";
+import Typist from "react-typist";
 
-class About extends React.Component {
+const About = props => {
+  return (
+    <React.Fragment>
 
-  constructor(props) {
-    super(props);
+      <div class="bg">
+        <div>
+          <button onClick={props.switchPage}>
+            <Button color="danger">Back home</Button>{" "}
+          </button>
+        </div>
 
-    this.switchToPage = this.switchToPage.bind(this);
-    this.state = {
-      currentPage: <FirstPage switchToPage={this.switchToPage} switchPage={props.switchPage} />
-    }
-  }
+        <div
+          className="d-flex flex-column align-items-end mr-3 "
+          style={{ height: "87vh" }}
+        >
+          <img
+            class="imagine"
+            src="https://www.shitpostbot.com/resize/585/400?img=%2Fimg%2Fsourceimages%2Fcalypso-twisted-metal-5a86b4cd8e306.jpeg"
+          ></img>
 
-  switchToPage(link) {
-    switch (link) {
-      case 'aleg1':
-        this.setState({ currentPage: <Aleg1 switchToPage={this.switchToPage} /> });
-        break;
-      case 'aleg2':
-        this.setState({ currentPage: <Aleg2 switchToPage={this.switchToPage} /> });
-        break;
-        case 'aleg3':
-          this.setState({ currentPage: <Aleg3 switchToPage={this.switchToPage} /> });
-          break;
+          <Row>
+            <Button
+              color="primary"
+              size="lg"
+              block
+              onClick={() => props.switchPage("aleg1")}
+            >
+              Alegerea 1
+            </Button>
+          </Row>
 
-      default:
-        this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
-        break;
-    }
-  }
-
-
-  render() {
-    return (
-      <React.Fragment>
-
-        {this.state.currentPage}
-      </React.Fragment>
-    );
-  }
+          <Row>
+            <Button color="primary" size="lg" block>
+              Alegerea 2
+            </Button>
+          </Row>
+        </div>
+      </div>
+      <div class="text" className="d-flex align-items-end justify-content-center">
+        <Alert color="primary">
+          <Typist>
+            Kill me pls.
+          </Typist>
+        </Alert>
+      </div>
+    </React.Fragment>
+  );
 };
-
-
 
 export default About;

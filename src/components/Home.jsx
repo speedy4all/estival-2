@@ -37,7 +37,7 @@ const Home = props => {
           <Col sm={2}>
             <Form>
               <FormGroup>
-                <Label for="exampleSelect">Stele</Label>
+                <Label for="exampleSelect">Clasificare dupa stele</Label>
                 <Input type="select" name="select" id="exampleSelect">
                   <option>*</option>
                   <option>**</option>
@@ -46,6 +46,7 @@ const Home = props => {
                   <option>*****</option>
                 </Input>
               </FormGroup>
+              
             </Form>
           </Col>
           <Col sm={10} className="ab"></Col>

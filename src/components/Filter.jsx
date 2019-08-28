@@ -1,14 +1,15 @@
 import React from 'react';
 
-import React, { Component } from 'react'
-
 export class Filter extends Component {
+    
+
+
     render() {
         return (
             <Form onSubmit={() => {alert("submit")}}>
             <FormGroup>
               <Label for="exampleSelect">Clasificare dupa stele</Label>
-              <Input type="select" name="">
+              <Input type="select" name="Recenzii">
                 <option>*</option>
                 <option>**</option>
                 <option>***</option>

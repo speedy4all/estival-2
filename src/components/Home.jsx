@@ -22,7 +22,7 @@ const Home = props => {
         <h1 class="titlu">Ball story</h1>
         <button class="buttonStart"   onClick={() => {
           props.switchPage("About");
-        }} ><Button color="success">Start Game</Button>{' '}</button>
+        }} ><Button color="success">Start-Game</Button>{' '}</button>
        
         </div>
 

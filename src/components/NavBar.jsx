@@ -51,6 +51,9 @@ export class NavBar extends Component {
                         </InputGroupAddon>
                     </InputGroup>
                   </NavItem>
+                  <NavItem>
+                    <Button onClick={this.props.addNewEvent}>New Event</Button>
+                  </NavItem>
                   <UncontrolledDropdown nav inNavbar>
                     <DropdownToggle nav caret>
                       Cont

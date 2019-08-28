@@ -61,6 +61,17 @@ const Home = props => {
 
                 </Input>
               </FormGroup>
+              <FormGroup>
+                  <Label for="exampleSelect">Facilitati</Label>
+                  <Input type="select" name="select" id="exampleSelect">
+                    <option>parcare</option>
+                    <option>mic dejun</option>
+                    <option>restaurant</option>
+                    <option>sala de jocuri</option>
+                    <option>sala de fitness</option>
+                    <option>accepta animale de companie</option>
+                  </Input>
+                </FormGroup>
             </Form>
           </Col>
           <Col sm={10} className="ab"></Col>

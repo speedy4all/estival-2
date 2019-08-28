@@ -7,6 +7,7 @@ import { Button } from 'reactstrap';
 class App extends Component {
   constructor(props) {
     super(props);
+    
 
     this.switchPage = this.switchPage.bind(this);
     this.state = {

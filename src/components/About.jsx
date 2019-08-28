@@ -1,7 +1,6 @@
 import React from "react";
 
-import { Button,Row } from "reactstrap";
-import { Button, Row } from "reactstrap";
+
 
 import { Button, Row, Alert } from "reactstrap";
 
@@ -16,7 +15,7 @@ const About = props => {
 
 
 
-=======
+
       <div class="bg">
         <div>
           <button onClick={props.switchPage}>

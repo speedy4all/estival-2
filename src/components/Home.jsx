@@ -33,7 +33,6 @@ const Home = props => {
           <Row >
             <Col sm={2} className="fil">Filters</Col>
 
-<<<<<<< HEAD
           </Row>
           <Row>
             <Col className="fil" sm={2}>
@@ -63,40 +62,6 @@ const Home = props => {
             <Col sm={10} className="ab"></Col>
           </Row>
         </Container>
-=======
-        </Row>
-        <div className="carusel" >
-            <Carusel />
-        </div>
-        <Row>
-          <Col sm={2}>
-            <Form>
-              <FormGroup>
-                <Label for="exampleSelect">Clasificare dupa stele</Label>
-                <Input type="select" name="select" id="exampleSelect">
-                  <option>*</option>
-                  <option>**</option>
-                  <option>***</option>
-                  <option>****</option>
-                  <option>*****</option>
-                </Input>
-              </FormGroup>
-              <FormGroup>
-                <Label for="exampleSelect">Distanta fata de centru</Label>
-                <Input type="select" name="select" id="exampleSelect">
-                  <option>500m</option>
-                  <option>1km</option>
-                  <option>2-5km</option>
-                  <option>5-10km</option>
-                  
-                </Input>
-              </FormGroup>
-            </Form>
-          </Col>
-          <Col sm={10} className="ab"></Col>
-        </Row>
-      </Container>
->>>>>>> 5141f001da37cf6adcd2e8121cd66f41e3f9644c
       </div>
     </React.Fragment>
   );

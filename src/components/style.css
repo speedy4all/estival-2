@@ -8,6 +8,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
 }
 
 .carusel {
@@ -37,3 +38,6 @@
     background:rgba(255,255,255,0.5);
     
 }
+html {
+    overflow-y: scroll; 
+  }

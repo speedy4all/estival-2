@@ -1,12 +1,11 @@
-import React from "react";
-import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
-import { Button } from 'reactstrap';
+import React from 'react';
+import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input, Form, FormGroup, Label, FormText, Button } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './style.css';
-import { Form, FormGroup, Label, FormText } from 'reactstrap';
 import Carusel from './Carusel';
+
 
 const Home = props => {
   return (
@@ -25,30 +24,10 @@ const Home = props => {
             props.switchPage("About");
           }} >Help!
             </Button>{' '}
+        </Navbar>
 
-        </Row>
-        <Row>
-          <br />
-        </Row>
-        
-
-        <Row>
-          <Col sm={4}></Col>
-          <Col className="carusel">
-            <Carusel />
-          </Col>
-        </Row>
-        <Row >
-          <Col sm={2} className="fil">Filters</Col>
-
-        <Col sm={2} className="fil">
-          <Row>
-            <br />
-          </Row>Filters
-        <Row>
-            <br />
-          </Row>
-          <Form>
+        <Col sm={2} className="fil">Filters
+        <Form>
             <FormGroup>
               <Label for="exampleSelect">Clasificare dupa stele</Label>
               <Input type="select" name="select" id="exampleSelect">
@@ -98,11 +77,13 @@ const Home = props => {
           </Form>
           <Button>Submit</Button>
 
-
         </Col>
-        <Col sm={10} className="ab"></Col>
+        <Col className="carusel">
+          <Carusel />
+        </Col>
       </div>
-    </React.Fragment >
+    </React.Fragment>
+
   );
 };
 

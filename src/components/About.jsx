@@ -9,7 +9,7 @@ const About = props => {
       <div class="bg">
         <div>
           <button class="buttonHome" onClick={props.switchPage}>
-            <Button  color="danger">Back home</Button>{" "}
+            <Button color="danger">Back home</Button>{" "}
           </button>
         </div>
 

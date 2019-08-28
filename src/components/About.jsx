@@ -1,7 +1,4 @@
 import React from "react";
-
-
-
 import { Button, Row, Alert } from "reactstrap";
 
 import "../Stile.css";

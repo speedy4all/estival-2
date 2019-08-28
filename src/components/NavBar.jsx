@@ -64,7 +64,7 @@ export class NavBar extends Component {
                       </DropdownItem>
                       <DropdownItem divider />
                       <DropdownItem>
-                        Log in
+                      <Button onClick={this.props.showLogInForm}>LogIn</Button>
                       </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>

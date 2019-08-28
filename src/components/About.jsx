@@ -1,7 +1,9 @@
 import React from "react";
-import { Button, Row } from "reactstrap";
+import { Button, Row, Alert } from "reactstrap";
 import "../Stile.css";
 import Typist from 'react-typist';
+
+
 
 const About = props => {
   return (
@@ -21,12 +23,15 @@ const About = props => {
             class="imagine"
             src="https://www.shitpostbot.com/resize/585/400?img=%2Fimg%2Fsourceimages%2Fcalypso-twisted-metal-5a86b4cd8e306.jpeg"
           ></img>
-          <div> 
-            <Typist>
-            Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
+          <div>
+            <Alert color="primary">
+              <Typist>
+                Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
             </Typist>
+            </Alert>
+
           </div>
-          
+
 
           <Row>
             <Button
@@ -46,9 +51,13 @@ const About = props => {
           </Row>
         </div>
       </div>
+
+
+
     </React.Fragment>
   );
 };
+
 /*{https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7hrkNlZqVxvvASOo85DFkreu5A7ro8Bv_KHJMB9EYu1VOo97m
 https://pbs.twimg.com/media/CqH2o0lW8AAw6q9.jpg}*/
 

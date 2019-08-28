@@ -26,8 +26,25 @@ const Home = props => {
           }} >Help!
             </Button>{' '}
 
+<<<<<<< HEAD
+        </Row>
+        <Row>
+          <br />
+        </Row>
+        
+
+        <Row>
+          <Col sm={4}></Col>
+          <Col className="carusel">
+            <Carusel />
+          </Col>
+        </Row>
+        <Row >
+          <Col sm={2} className="fil">Filters</Col>
+=======
         </Navbar>
 
+>>>>>>> b27fb13048dfcd1e22b780d8e0e7e24409a0e72e
 
         <Col sm={2} className="fil">
           <Row>

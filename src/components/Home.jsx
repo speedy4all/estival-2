@@ -33,7 +33,14 @@ const Home = props => {
         <Row>
           <br />
         </Row>
+        
 
+        <Row>
+          <Col sm={4}></Col>
+          <Col className="carusel">
+            <Carusel />
+          </Col>
+        </Row>
         <Row >
           <Col sm={2} className="fil">Filters</Col>
 

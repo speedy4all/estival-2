@@ -11,7 +11,10 @@
 }
 
 .carusel {
-    text-align: right;
+    text-content: right;
+    height: 100px;
+    width: 50px;
+    padding-top: 110px;
 }
 
 .Aboutcss{

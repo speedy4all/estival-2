@@ -8,11 +8,6 @@ const About = props => {
   return (
     <React.Fragment>
 
-
-
-
-
-
       <div class="bg">
         <div>
           <button onClick={props.switchPage}>
@@ -50,7 +45,7 @@ const About = props => {
       <div class="text" className="d-flex align-items-end justify-content-center">
         <Alert color="primary">
           <Typist>
-            Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
+            Kill me pls.
           </Typist>
         </Alert>
       </div>

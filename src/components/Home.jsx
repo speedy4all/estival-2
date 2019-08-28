@@ -63,6 +63,15 @@ const Home = props => {
                 <option>accepta animale de companie</option>
               </Input>
             </FormGroup>
+            <FormGroup>
+              <Label for="exampleSelect">Mese</Label>
+              <Input type="select" name="select" id="exampleSelect">
+                <option>mic dejun</option>
+                <option>toate mesele incluse</option>
+                <option>mic dejun si cina incluse</option>
+                <option>self catering</option>
+              </Input>
+            </FormGroup>
           </Form>
         </Col>
         <Col sm={10} className="ab"></Col>

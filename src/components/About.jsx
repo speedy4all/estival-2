@@ -18,7 +18,7 @@ const About = props => {
 
         <Row><Button color="primary" size="lg" block>Alegerea 1</Button></Row>
 
-        <Row><Button color="primary" size="lg" block>Alegerea22</Button></Row>
+        <Row><Button color="primary" size="lg" block>Alegerea 2</Button></Row>
         
       </div>
 

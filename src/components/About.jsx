@@ -21,12 +21,6 @@ const About = props => {
             class="imagine"
             src="https://www.shitpostbot.com/resize/585/400?img=%2Fimg%2Fsourceimages%2Fcalypso-twisted-metal-5a86b4cd8e306.jpeg"
           ></img>
-          <div> 
-            <Typist>
-            Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
-            </Typist>
-          </div>
-          
 
           <Row>
             <Button
@@ -44,14 +38,15 @@ const About = props => {
               Alegerea 2
             </Button>
           </Row>
-        </div><div className="d-flex align-items-end justify-content-center">
-              <Typist>Animate this text.</Typist>
-            </div>
+        </div>
+        <div className="d-flex align-items-end justify-content-center">
+          <Typist>
+            Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
+          </Typist>
+        </div>
       </div>
     </React.Fragment>
   );
 };
-
-
 
 export default About;

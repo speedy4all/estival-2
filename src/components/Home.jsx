@@ -1,5 +1,5 @@
 import React from "react";
-import { InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
+import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input } from 'reactstrap';
 import { Button } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -12,25 +12,21 @@ const Home = props => {
   return (
     <React.Fragment>
       <div className="Homecss">
-        <Row>
-          <Col sm={1} className="logo">tripME</Col>
-          <Col sm={10}>
-            <InputGroup >
-              <InputGroupAddon addonType="prepend">search</InputGroupAddon>
-              <Input placeholder="destination" />
-              <Button color="info" onClick={() => {
-                props.switchPage("About");
-              }} >enter
-              </Button>
-            </InputGroup>
-          </Col>
-          <Col sm={1}>
-            <Button className="button1" onClick={() => {
+        <Navbar color="light" light expand="md">
+          <NavbarBrand href="/">tripME</NavbarBrand>
+          <InputGroup >
+            <InputGroupAddon addonType="prepend">search</InputGroupAddon>
+            <Input placeholder="destination" />
+            <Button color="info" onClick={() => {
               props.switchPage("About");
-            }} >Help!
+            }} >enter</Button>
+          </InputGroup>
+          <Button className="button1" onClick={() => {
+            props.switchPage("About");
+          }} >Help!
             </Button>{' '}
-          </Col>
-        </Row>
+
+        </Navbar>
         <Row>
           <br />
         </Row>
@@ -71,7 +67,7 @@ const Home = props => {
         </Col>
         <Col sm={10} className="ab"></Col>
       </div>
-    </React.Fragment>
+    </React.Fragment >
   );
 };
 

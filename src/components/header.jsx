@@ -1,6 +1,6 @@
 import React from 'react';
-import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input, } from 'reactstrap';
-import About from './About';
+import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input, Button } from 'reactstrap';
+
 
 export class Header extends React.Component {
  render() {
@@ -11,12 +11,12 @@ export class Header extends React.Component {
                     <InputGroupAddon addonType="prepend">search</InputGroupAddon>
                     <Input placeholder="destinatie" />
                     <Button color="info" onClick={() => {
-                        props.switchPage("About");
+                        this.props.switchPage("About");
                     }} >enter</Button>
                 </InputGroup>
                 <Button className="button1" onClick={() => {
-                    props.switchPage("About");
-                 }} Help!
+                    this.props.switchPage("About");
+                 }} >Help!
                                 </Button>{' '}
             </Navbar>
             )

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input, Form, FormGroup, Label, FormText, Button } from 'reactstrap';
+import { Navbar, NavbarBrand, InputGroup, InputGroupAddon, InputGroupText, Input, Form, FormGroup, Label, FormText } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -12,8 +12,8 @@ const Home = props => {
   return (
     <React.Fragment>
       <div className="Homecss">
-
-        <Header />
+        
+        <Header switchPage={props.switchPage}/>
         <Col sm={2} className="fil">Filters
         <Filter filterData={() => ({})} />
         </Col>

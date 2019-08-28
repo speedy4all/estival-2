@@ -12,7 +12,7 @@ const Home = props => {
   return (
     <React.Fragment>
       <div className="Homecss">
-      <Container>
+
         <Row>
           <Col sm={1}>tripME</Col>
           <Col sm={10}><InputGroup >
@@ -23,19 +23,23 @@ const Home = props => {
             }} >enter</Button>{' '}
           </InputGroup>
           </Col>
-          <Col sm={1}> 
-          <Button className="button1" onClick={() => {
+          <Col sm={1}>
+            <Button className="button1" onClick={() => {
               props.switchPage("About");
             }} >Help!</Button>{' '}
           </Col>
 
         </Row>
         <Row>
-          <Col sm={4}>Filters</Col>
-          <Col sm={8} className="carusel"> <Carusel /> </Col>
+          <br />
+        </Row>
+
+        <Row >
+          <Col sm={2} className="fil">Filters</Col>
+
         </Row>
         <Row>
-          <Col sm={2}>
+          <Col className="fil" sm={2}>
             <Form>
               <FormGroup>
                 <Label for="exampleSelect">Clasificare dupa stele</Label>
@@ -54,14 +58,25 @@ const Home = props => {
                   <option>1km</option>
                   <option>2-5km</option>
                   <option>5-10km</option>
-                  
+
                 </Input>
               </FormGroup>
+              <FormGroup>
+                  <Label for="exampleSelect">Facilitati</Label>
+                  <Input type="select" name="select" id="exampleSelect">
+                    <option>parcare</option>
+                    <option>mic dejun</option>
+                    <option>restaurant</option>
+                    <option>sala de jocuri</option>
+                    <option>sala de fitness</option>
+                    <option>accepta animale de companie</option>
+                  </Input>
+                </FormGroup>
             </Form>
           </Col>
           <Col sm={10} className="ab"></Col>
         </Row>
-      </Container>
+
       </div>
     </React.Fragment>
   );

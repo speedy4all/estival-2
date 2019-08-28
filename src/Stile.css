@@ -35,6 +35,7 @@
 
 .imagine {
   border-radius: 50%;
+  width:500px;
 }
 .bg {
   background-image: url("https://assetstorev1-prd-cdn.unity3d.com/key-image/a240f916-20bc-4e47-9048-98a8d1d92d53.jpg");
@@ -44,4 +45,11 @@
 .buttonHome {
   background-color: #df3e39;
   border-color: #df3e39;
+}
+.bg1{
+  background-image: url("https://i.pinimg.com/564x/26/8f/35/268f35bb3334a06076dd4e90a9f2a28d.jpg");
+  background-size: contain;
+}
+.text{
+  background-color: rgb(255, 0, 242);
 }

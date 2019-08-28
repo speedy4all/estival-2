@@ -96,6 +96,9 @@ const Home = props => {
               </Input>
             </FormGroup>
           </Form>
+          <Button>Submit</Button>
+
+
         </Col>
         <Col sm={10} className="ab"></Col>
       </div>

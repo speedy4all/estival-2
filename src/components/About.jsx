@@ -43,14 +43,6 @@ const About = props => {
           </Row>
         </div>
 
-        <div className="d-flex align-items-end justify-content-center">
-        <Alert color="primary">
-              <Typist>
-                Salut Minge, te pot ajuta eu sa scapi de aici, urmeaza-ma.
-            </Typist>
-            </Alert>
-        </div>
-
       </div>
       <div class="text" className="d-flex align-items-end justify-content-center">
         <Alert color="primary">

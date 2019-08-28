@@ -16,7 +16,7 @@ const Home = props => {
           <NavbarBrand href="/">tripME</NavbarBrand>
           <InputGroup >
             <InputGroupAddon addonType="prepend">search</InputGroupAddon>
-            <Input placeholder="destination" />
+            <Input placeholder="destinatie" />
             <Button color="info" onClick={() => {
               props.switchPage("About");
             }} >enter</Button>
@@ -70,6 +70,13 @@ const Home = props => {
                 <option>toate mesele incluse</option>
                 <option>mic dejun si cina incluse</option>
                 <option>self catering</option>
+              </Input>
+            </FormGroup>
+            <FormGroup>
+              <Label for="exampleSelect">Tipuri de pat preferat</Label>
+              <Input type="select" name="select" id="exampleSelect">
+                <option>paturi twin</option>
+                <option>pat double</option>
               </Input>
             </FormGroup>
           </Form>

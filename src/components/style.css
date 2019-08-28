@@ -10,6 +10,10 @@
     background-position: center;
 }
 
+.carusel {
+    text-align: right;
+}
+
 .Aboutcss{
     height: 100vh;
     background-image: url('../imagini/intrebare.jpg');

@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import './style.css';
 import { Form, FormGroup, Label, FormText } from 'reactstrap';
+import Carusel from './Carusel';
 
 const Home = props => {
   return (
@@ -33,6 +34,9 @@ const Home = props => {
           <Col sm={4}>Filters</Col>
 
         </Row>
+        <div className="carusel" >
+            <Carusel />
+        </div>
         <Row>
           <Col sm={2}>
             <Form>

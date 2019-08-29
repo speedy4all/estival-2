@@ -5,15 +5,22 @@ import Typist from "react-typist";
 
 const Story = props => (
 
-    <div class="divStory">
-        <Button
-              color="primary"
+    <div class="divStory" style={{ height: "100vh"}}>
+        <div
+          className="d-flex flex-column align-items-end mr-3 "
+          style={{ height: "0vh", width: "30vh"}}
+        >
+            <Button
+              color="danger"
               size="lg"
               block
               onClick={() => props.switchToPage("FirstPage")}
             >
-              Open the door.
+              Begin
             </Button>
+
+        </div>
+    
        
     </div>
     

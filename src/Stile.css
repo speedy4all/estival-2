@@ -93,3 +93,35 @@
   background-image: url("https://ak4.picdn.net/shutterstock/videos/897724/thumb/1.jpg");
   background-size: contain;
 }
+.bad{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 10em;
+  text-shadow: 4px 4px rgb(251, 255, 0), 5px 5px rgb(209, 212, 9);
+  text-align: center;
+  height: 50vh;
+}
+.div3{
+  background-image: url("https://cdn.pixabay.com/photo/2018/03/27/19/24/panoramic-3267048_960_720.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.good{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 10em;
+  text-shadow: 4px 4px rgb(43, 255, 0), 5px 5px rgb(65, 207, 9);
+  text-align: center;
+  height: 50vh;
+}
+.div4{
+  background-image: url("https://sc01.alicdn.com/kf/HTB1FYAaKpXXXXX8XpXXq6xXFXXXP/Architecture-house-and-town-plans-2D-3D.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

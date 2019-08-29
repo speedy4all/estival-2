@@ -125,3 +125,26 @@
   justify-content: center;
   align-items: center;
 }
+.divStory{
+  background-image: url("https://sc01.alicdn.com/kf/HTB1FYAaKpXXXXX8XpXXq6xXFXXXP/Architecture-house-and-town-plans-2D-3D.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.buttonStory
+{
+  cursor: pointer;
+  display: inline-block;  
+  height: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  position: relative;
+  line-height: 2.5em;
+  padding-left: 1em;
+  padding-right: 2em;
+  background: white;
+  color: black;
+}

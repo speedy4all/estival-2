@@ -14,9 +14,12 @@ const Home = props => {
       <div className="Homecss">
         
         <Header switchPage={props.switchPage}/>
+        <Row>
         <Col sm={2} className="fil">Filters
         <Filter filterData={() => ({})} />
         </Col>
+        <Col sm={10}><Carusel /></Col>
+        </Row>
       </div>
     </React.Fragment>
 

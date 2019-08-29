@@ -4,8 +4,13 @@ import "../Stile.css";
 import Typist from "react-typist";
 
 const Story = props => (
-
+  
     <div class="divStory">
+      <div class="Story">
+  <Typist>
+    A fost odata;
+  </Typist>
+  </div>
         <Button
               color="primary"
               size="lg"
@@ -15,9 +20,9 @@ const Story = props => (
               Open the door.
             </Button>
        
+    
+    
     </div>
-    
-    
 
 );
 

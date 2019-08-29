@@ -15,7 +15,7 @@ const Aleg8 = props => {
 
       </div>
       <div className="d-flex align-items-end justify-content-center">
-        <Alert color="primary">
+        <Alert color="warning">
           <Typist>(Ball) : I don't know where I am, I think I'll find another owner.</Typist>
         </Alert>
       </div>

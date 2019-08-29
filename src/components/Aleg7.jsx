@@ -20,14 +20,9 @@ const Aleg7 = props => {
           
 
           <Row>
-            <Button
-              color="primary"
-              size="lg"
-              block
-              onClick={() => props.switchToPage("FirstPage")}
-            >
-              Home
-            </Button>
+          <button class="buttonHome" onClick={props.switchPage}>
+          <Button color="danger">Start Over</Button>{" "}
+        </button>
           </Row>
         </div>
       </div>

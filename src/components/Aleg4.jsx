@@ -14,11 +14,6 @@ const Aleg4 = props => {
                 className="d-flex flex-column align-items-end mr-3 "
                 style={{ height: "87vh" }}
             >
-                
-
-
-
-
                 <Row>
                     <Button
                         color="primary"

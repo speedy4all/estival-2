@@ -7,8 +7,8 @@ const Aleg2 = props => {
         <div>
         <div class="bg1" style={{ height: "87vh" } }>
         <div>
-                <button class="buttonHome" onClick={props.switchPage}>
-                    <Button color="danger">Back home</Button>{" "}
+                <button class="buttonHome" onClick={() => props.switchToPage('Home')}>
+                    <Button color="danger">Go back</Button>{" "}
                 </button>
             </div>
 

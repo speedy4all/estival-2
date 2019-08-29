@@ -6,7 +6,7 @@ import Typist from "react-typist";
 const Aleg1 = props => {
   return (
     <div>
-      <div class="bg1" style={{ height: "87vh" }}>
+      <div class="bg4" style={{ height: "87vh" }}>
         <div
           className="d-flex flex-column align-items-end mr-3 "
           style={{ height: "87vh" }}

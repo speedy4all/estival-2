@@ -11,7 +11,7 @@ const Aleg8 = props => {
         <button class="buttonHome" onClick={() => props.switchToPage("FirstPage")}>
           <Button color="danger">Back to start</Button>{" "}
         </button>
-        <img class="goimage" src="https://i.imgur.com/8Cfecms.png"></img>
+        <img class="goimage" src="https://i.imgur.com/WeVNWFP.png"></img>
 
       </div>
       <div className="d-flex align-items-end justify-content-center">

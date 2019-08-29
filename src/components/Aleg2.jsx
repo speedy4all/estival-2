@@ -26,13 +26,13 @@ const Aleg2 = props => {
                             block
                             onClick={() => props.switchToPage("aleg3")}
                         >
-                            I should go with Man in Black
+                            I will try to enter on this door.
       </Button>
                     </Row>
 
                     <Row>
                         <Button color="primary" size="lg" block onClick={() => props.switchToPage('aleg4')}>
-                            I should go alone
+                            I will go ahead
       </Button>
                     </Row>
                 </div>
@@ -41,7 +41,7 @@ const Aleg2 = props => {
             <div className="d-flex align-items-end justify-content-center">
                 <Alert color="primary">
                     <Typist>
-                        (Man in Black) : I can help you go home
+                        (Ball) : I think I'm lost.
     </Typist>
                 </Alert>
 

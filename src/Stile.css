@@ -53,3 +53,8 @@
 .text{
   background-color: rgb(255, 0, 242);
 }
+.gameover
+{
+  background-image: url("https://www.decalguy.com/prod_images_large/1159.jpg");
+  background-size: 100%;
+}

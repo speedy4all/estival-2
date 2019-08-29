@@ -3,7 +3,7 @@ import { Button, Row, Alert } from "reactstrap";
 import "../Stile.css";
 import Typist from "react-typist";
 
-const Aleg1 = props => {
+const Aleg4 = props => {
     return (
 
         <div>
@@ -27,15 +27,15 @@ const Aleg1 = props => {
                         color="primary"
                         size="lg"
                         block
-                        onClick={() => props.switchToPage("aleg3")}
-                    > Enter on this door.
-                        
+                        onClick={() => props.switchToPage("aleg5")}
+                    > 
+                        Go right.
       </Button>
                 </Row>
 
                 <Row>
-                    <Button color="primary" size="lg" block onClick={() => props.switchToPage('aleg4')}>
-                      I will try to find another way outside.
+                    <Button color="primary" size="lg" block onClick={() => props.switchToPage('aleg6')}>
+                      Go left.
       </Button>
                 </Row>
             </div>
@@ -44,7 +44,7 @@ const Aleg1 = props => {
         <div className="d-flex align-items-end justify-content-center">
             <Alert color="primary">
                 <Typist>
-                (Man in Black) : This door will take you outside.
+                (Ball) : Look there are two doors!!
     </Typist>
             </Alert>
         
@@ -60,4 +60,5 @@ const Aleg1 = props => {
     );
 };
 
-export default Aleg1;
+export default Aleg4;
+

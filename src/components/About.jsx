@@ -1,66 +1,78 @@
 import React from "react";
 import "../Stile.css";
-import Aleg1 from './Aleg1';
-import Aleg2 from './Aleg2';
-import Aleg3 from './Aleg3';
-import Aleg4 from './Aleg4';
-import Aleg5 from './Aleg5';
-import Aleg6 from './Aleg6';
+import Aleg1 from "./Aleg1";
+import Aleg2 from "./Aleg2";
+import Aleg3 from "./Aleg3";
+import Aleg4 from "./Aleg4";
+import Aleg5 from "./Aleg5";
+import Aleg6 from "./Aleg6";
 import FirstPage from "./FirstPage";
-import Home from "./Home"
+import Home from "./Home";
 
 class About extends React.Component {
-
   constructor(props) {
     super(props);
 
     this.switchToPage = this.switchToPage.bind(this);
     this.state = {
-      currentPage: <FirstPage switchToPage={this.switchToPage} switchPage={props.switchPage} />
-    }
+      currentPage: (
+        <FirstPage
+          switchToPage={this.switchToPage}
+          switchPage={props.switchPage}
+        />
+      )
+    };
   }
 
   switchToPage(link) {
     switch (link) {
-      case 'FirstPage':
-        this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
+      case "FirstPage":
+        this.setState({
+          currentPage: <FirstPage switchToPage={this.switchToPage} />
+        });
         break;
-      case 'aleg1':
-        this.setState({ currentPage: <Aleg1 switchToPage={this.switchToPage} /> });
+      case "aleg1":
+        this.setState({
+          currentPage: <Aleg1 switchToPage={this.switchToPage} />
+        });
         break;
-      case 'aleg2':
-        this.setState({ currentPage: <Aleg2 switchToPage={this.switchToPage} /> });
+      case "aleg2":
+        this.setState({
+          currentPage: <Aleg2 switchToPage={this.switchToPage} />
+        });
         break;
-      case 'aleg3':
-        this.setState({ currentPage: <Aleg3 switchToPage={this.switchToPage} /> });
+      case "aleg3":
+        this.setState({
+          currentPage: <Aleg3 switchToPage={this.switchToPage} />
+        });
         break;
-      case 'aleg4':
-        this.setState({ currentPage: <Aleg4 switchToPage={this.switchToPage} /> });
+      case "aleg4":
+        this.setState({
+          currentPage: <Aleg4 switchToPage={this.switchToPage} />
+        });
         break;
-        case 'aleg5':
-        this.setState({ currentPage: <Aleg5 switchToPage={this.switchToPage} /> });
+      case "aleg5":
+        this.setState({
+          currentPage: <Aleg5 switchToPage={this.switchToPage} />
+        });
         break;
-        case 'aleg6':
-        this.setState({ currentPage: <Aleg6 switchToPage={this.switchToPage} /> });
+      case "aleg6":
+        this.setState({
+          currentPage: <Aleg6 switchToPage={this.switchToPage} />
+        });
         break;
 
       default:
-        this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
+        this.setState({
+          currentPage: <FirstPage switchToPage={this.switchToPage} />
+        });
         break;
     }
   }
 
-
   render() {
-    return (
-      <React.Fragment>
-
-        {this.state.currentPage}
-      </React.Fragment>
-    );
+    return <React.Fragment>{this.state.currentPage}</React.Fragment>;
   }
-};
-
-
+}
 
 export default About;

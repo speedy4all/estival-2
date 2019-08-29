@@ -28,11 +28,10 @@ class About extends React.Component {
         case 'aleg3':
           this.setState({ currentPage: <Aleg3 switchToPage={this.switchToPage} /> });
           break;
-        case 'Home':
-          this.setState({currentPage: <Home switchToPage={this.switchToPage} />})
+        
 
       default:
-        this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
+        this.setState({ currentPage: <Home switchToPage={this.switchToPage} /> });
         break;
     }
   }

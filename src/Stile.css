@@ -155,3 +155,9 @@
   color:rgb(66, 209, 66);
   text-shadow: 4px 4px black, 5px 5px black;
 }
+.minge{
+  position: absolute;
+  bottom: 150px;
+  left: 120px;
+  font-size: 18px;
+}

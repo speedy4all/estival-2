@@ -6,6 +6,7 @@ const Aleg2 = props => {
   return (
     <div>
       <div class="bg1" style={{ height: "87vh" }}>
+      <img class="minge" src="https://i.imgur.com/8wCMBoa.png"></img>
         <div
           className="d-flex flex-column align-items-end mr-3 "
           style={{ height: "87vh" }}

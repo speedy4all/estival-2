@@ -4,7 +4,7 @@ import Aleg1 from './Aleg1';
 import Aleg2 from './Aleg2';
 import Aleg3 from './Aleg3';
 import FirstPage from "./FirstPage";
-import Home from "./Home";
+import Home from "./Home"
 
 class About extends React.Component {
 
@@ -31,11 +31,7 @@ class About extends React.Component {
         case 'aleg3':
           this.setState({ currentPage: <Aleg3 switchToPage={this.switchToPage} /> });
           break;
-      case 'Home':
-        this.setState({ currentPage: <Home switchToPage={this.switchToPage} /> });
-        break;
-      
-
+         
       default:
         this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
         break;

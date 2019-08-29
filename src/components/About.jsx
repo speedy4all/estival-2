@@ -4,6 +4,8 @@ import Aleg1 from './Aleg1';
 import Aleg2 from './Aleg2';
 import Aleg3 from './Aleg3';
 import Aleg4 from './Aleg4';
+import Aleg5 from './Aleg5';
+import Aleg6 from './Aleg6';
 import FirstPage from "./FirstPage";
 import Home from "./Home"
 
@@ -34,6 +36,12 @@ class About extends React.Component {
         break;
       case 'aleg4':
         this.setState({ currentPage: <Aleg4 switchToPage={this.switchToPage} /> });
+        break;
+        case 'aleg5':
+        this.setState({ currentPage: <Aleg5 switchToPage={this.switchToPage} /> });
+        break;
+        case 'aleg6':
+        this.setState({ currentPage: <Aleg6 switchToPage={this.switchToPage} /> });
         break;
 
       default:

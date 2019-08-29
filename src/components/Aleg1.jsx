@@ -41,7 +41,7 @@ const Aleg1 = props => {
 
       <div className="d-flex align-items-end justify-content-center">
         <Alert color="primary">
-          <Typist>(Man in Black) : Enter in this room.</Typist>
+          <Typist>(Man in Black) : This door will take you outside.</Typist>
         </Alert>
       </div>
     </div>

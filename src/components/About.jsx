@@ -8,6 +8,7 @@ import Aleg5 from "./Aleg5";
 import Aleg6 from "./Aleg6";
 import Aleg7 from "./Aleg7";
 import Aleg8 from "./Aleg8";
+import Aleg31 from "./Aleg31";
 import FirstPage from "./FirstPage";
 import Story from "./Story";
 import Home from "./Home";
@@ -69,6 +70,9 @@ class About extends React.Component {
         break;
         case 'aleg8':
         this.setState({ currentPage: <Aleg8 switchToPage={this.switchToPage} /> });
+        break;
+        case 'aleg31':
+        this.setState({ currentPage: <Aleg31 switchToPage={this.switchToPage} /> });
         break;
 
       default:

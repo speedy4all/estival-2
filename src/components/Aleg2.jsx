@@ -19,7 +19,7 @@ const Aleg2 = props => {
               color="primary"
               size="lg"
               block
-              onClick={() => props.switchToPage("aleg3")}
+              onClick={() => props.switchToPage("aleg31")}
             >
               I will try to enter on this door.
             </Button>

@@ -9,7 +9,7 @@ const Aleg7 = props => {
       <center class="good">Good Ending</center>
       <div>
         <button class="buttonHome" onClick={() => props.switchToPage("FirstPage")}>
-          <Button color="danger">Back to start</Button>{" "}
+          <Button color="danger">Play Again</Button>{" "}
         </button>
         <img class="goimage" src="https://i.imgur.com/3y2CzN2.png"></img>
 

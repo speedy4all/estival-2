@@ -12,8 +12,7 @@ const Aleg1 = props => {
           style={{ height: "87vh" }}
         >
           <img
-            class="invizibil"
-            src="https://www.transparenttextures.com/patterns/asfalt-light.png"
+            src="https://i.imgur.com/r15dRQp.png"
           ></img>
 
           <Row>

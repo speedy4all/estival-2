@@ -22,7 +22,7 @@ const Aleg4 = props => {
               block
               onClick={() => props.switchToPage("aleg5")}
             >
-              Go right.
+              Go on right door.
             </Button>
           </Row>
 
@@ -33,14 +33,14 @@ const Aleg4 = props => {
               block
               onClick={() => props.switchToPage("aleg6")}
             >
-              Go left.
+              Go on left door.
             </Button>
           </Row>
         </div>
       </div>
       <div className="d-flex align-items-end justify-content-center">
         <Alert color="primary">
-          <Typist>(Ball) : Look there are two doors!!</Typist>
+          <Typist>(Ball) : Look there are two doors ahead!!</Typist>
         </Alert>
       </div>
     </div>

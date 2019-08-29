@@ -9,7 +9,7 @@ const Aleg3 = props => {
                 <button class="buttonHome" onClick={() => props.switchToPage('Home')}>
                     <Button color="danger">Restart</Button>{" "}
                 </button>
-                <img class="goimage" src="https://www196.lunapic.com/editor/working/15670669902556798?9435129990"></img>
+                <img class="goimage" src="https://i.imgur.com/8Cfecms.png"></img>
             </div>
         </div>
         

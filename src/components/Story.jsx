@@ -7,7 +7,7 @@ const Story = props => (
   <div class="divStory" style={{ height: "100vh" }}>
     <div class="Story">
         <Typist>Once upon a time, a boy was playing with his ball at home and accidentaly dropped it in the sewers.
-          The ball found itself in a wierd dungeon where he met a sctrange man.
+          The ball found itself in a wierd dungeon where he met a strange man.
         </Typist>
       </div><div
       className="d-flex flex-column align-items-end mr-3 "

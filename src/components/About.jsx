@@ -7,7 +7,7 @@ import Aleg4 from "./Aleg4";
 import Aleg5 from "./Aleg5";
 import Aleg6 from "./Aleg6";
 import Aleg7 from "./Aleg7";
-import Aleg8 from "./Aleg7";
+import Aleg8 from "./Aleg8";
 import FirstPage from "./FirstPage";
 import Home from "./Home";
 

@@ -3,7 +3,7 @@ import { Button, Row, Alert } from "reactstrap";
 import "../Stile.css";
 import Typist from "react-typist";
 
-const Aleg5 = props => {
+const Aleg7 = props => {
   return (
     <div>
       <div class="bg4" style={{ height: "87vh" }}>
@@ -24,9 +24,9 @@ const Aleg5 = props => {
               color="primary"
               size="lg"
               block
-              onClick={() => props.switchToPage("aleg7")}
+              onClick={() => props.switchToPage("FirstPage")}
             >
-              Open the door.
+              Home
             </Button>
           </Row>
         </div>
@@ -34,11 +34,11 @@ const Aleg5 = props => {
 
       <div className="d-flex align-items-end justify-content-center">
         <Alert color="primary">
-          <Typist>(Ball) : Let's get out of here.</Typist>
+          <Typist>(Ball) : Yes, I am home.</Typist>
         </Alert>
       </div>
     </div>
   );
 };
 
-export default Aleg5;
+export default Aleg7;

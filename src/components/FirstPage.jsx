@@ -6,11 +6,6 @@ import Typist from "react-typist";
 const FirstPage = props => (
     <div>
         <div class="bg">
-            <div>
-                <button class="buttonHome" onClick={props.switchPage}>
-                    <Button color="danger">Back home</Button>{" "}
-                </button>
-            </div>
 
             <div
                 className="d-flex flex-column align-items-end mr-3 "

@@ -7,8 +7,7 @@ const Aleg2 = props => {
 
         <div class="bg1" style={{ height: "87vh" } }>
         
-            <button onClick={() => props.switchToPage('aleg3')}>Alege 5</button>
-            <button onClick={() => props.switchToPage('aleg4')}>Alege 6</button>
+            <button onClick={() => props.switchToPage('aleg3')}>NEXT</button>
 
         
         </div>

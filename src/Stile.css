@@ -53,8 +53,27 @@
 .text{
   background-color: rgb(255, 0, 242);
 }
-.gameover
+
+.div2
 {
-  background-image: url("https://www.decalguy.com/prod_images_large/1159.jpg");
-  background-size: 100%;
+  background-image: url("https://pbs.twimg.com/media/CqH2o0lW8AAw6q9.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.gameover{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 10em;
+  text-shadow: 4px 4px rgb(255, 0, 0), 5px 5px rgb(212, 9, 53);
+  text-align: center;
+  height: 50vh;
+}
+.goimage {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
 }

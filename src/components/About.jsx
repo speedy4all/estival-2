@@ -31,7 +31,7 @@ class About extends React.Component {
         
 
       default:
-        this.setState({ currentPage: <Home switchToPage={this.switchToPage} /> });
+        this.setState({ currentPage: <FirstPage switchToPage={this.switchToPage} /> });
         break;
     }
   }

@@ -8,11 +8,7 @@ const Aleg1 = props => {
 
         <div>
         <div class="bg1" style={{ height: "87vh" } }>
-        <div>
-                <button class="buttonHome" onClick={() => props.switchToPage('Home')}>
-                    <Button color="danger">Go Home</Button>{" "}
-                </button>
-            </div>
+        
 
             <div
                 className="d-flex flex-column align-items-end mr-3 "
@@ -32,14 +28,14 @@ const Aleg1 = props => {
                         size="lg"
                         block
                         onClick={() => props.switchToPage("aleg3")}
-                    > Enter in this room
+                    > Enter on this door.
                         
       </Button>
                 </Row>
 
                 <Row>
                     <Button color="primary" size="lg" block onClick={() => props.switchToPage('aleg4')}>
-                      I will refuse and try to find another way outside
+                      I will refuse and try to find another way outside.
       </Button>
                 </Row>
             </div>
@@ -48,7 +44,7 @@ const Aleg1 = props => {
         <div className="d-flex align-items-end justify-content-center">
             <Alert color="primary">
                 <Typist>
-                (Man in Black) : You should enter in this room
+                (Man in Black) : This door will take you outside.
     </Typist>
             </Alert>
         

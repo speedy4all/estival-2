@@ -9,6 +9,7 @@ import Aleg6 from "./Aleg6";
 import Aleg7 from "./Aleg7";
 import Aleg8 from "./Aleg8";
 import FirstPage from "./FirstPage";
+import Story from "./Story";
 import Home from "./Home";
 
 class About extends React.Component {
@@ -18,7 +19,7 @@ class About extends React.Component {
     this.switchToPage = this.switchToPage.bind(this);
     this.state = {
       currentPage: (
-        <FirstPage
+        <Story
           switchToPage={this.switchToPage}
           switchPage={props.switchPage}
         />

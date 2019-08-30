@@ -11,6 +11,12 @@
 
 }
 
+.carousel-item > img { 
+    width: 65%;
+    margin-top: 100px;
+    margin-left: 200px; 
+  }
+
 .carusel {
     text-align: right;
     height: 100px;

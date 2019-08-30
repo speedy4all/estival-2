@@ -9,19 +9,17 @@ import {
 
 const items = [
   {
-    id: 1,
-    altText: 'Slide 1',
-    caption: 'Slide 1'
+    src: 'https://as1.ftcdn.net/jpg/01/32/44/98/500_F_132449801_hhldTuyARbGgD5NMBzNEAa61Pz2FEcyl.jpg',
+    caption: 'Brasov'
+  
   },
   {
-    id: 2,
-    altText: 'Slide 2',
-    caption: 'Slide 2'
+    src: 'https://as1.ftcdn.net/jpg/00/93/49/20/500_F_93492004_f2ynh0GlzEoXerGJkv1q1ICV2wL6B8mg.jpg',
+    caption: 'Cluj-Napoca'
   },
   {
-    id: 3,
-    altText: 'Slide 3',
-    caption: 'Slide 3'
+    src: 'https://as2.ftcdn.net/jpg/01/13/33/07/500_F_113330730_dv8ZoKMtDIUxrnmki1DZ8Ww8QPW7H3rl.jpg',
+    caption: 'Bucuresti'
   }
 ];
 
@@ -67,42 +65,31 @@ class Example extends Component {
     const slides = items.map((item) => {
       return (
         <CarouselItem
-          className="custom-tag"
-          tag="div"
-          key={item.id}
           onExiting={this.onExiting}
           onExited={this.onExited}
+          key={item.src}
+          
         >
-          <CarouselCaption className="text-danger" captionText={item.caption} captionHeader={item.caption} />
+          <img src={item.src} alt={item.altText} />
+          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
         </CarouselItem>
       );
     });
 
     return (
-      <div>
-        <style>
-          {
-            `.custom-tag {
-                top: 100px;
-                max-width: 100%;
-                height: 500px;
-                background: transparent;
-              }`
-          }
-        </style>
-        <Carousel
-          activeIndex={activeIndex}
-          next={this.next}
-          previous={this.previous}
-        >
-          <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
-          {slides}
-          <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
-          <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
-        </Carousel>
-      </div>
+      <Carousel
+        activeIndex={activeIndex}
+        next={this.next}
+        previous={this.previous}
+      >
+        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
+        {slides}
+        <CarouselControl direction="prev" directionText="Previous" onClickHandler={this.previous} />
+        <CarouselControl direction="next" directionText="Next" onClickHandler={this.next} />
+      </Carousel>
     );
   }
 }
+
 
 export default Example;
